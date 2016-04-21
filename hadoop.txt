@@ -1,13 +1,18 @@
-To delete files from hdfs 
+//To delete files from hdfs 
 hdfs dfs -rm -r hdfs://path/to/file
 
-To list files in hdfs from root (can also specify the path to file or dir)
+//To list files in hdfs from root (can also specify the path to file or dir)
 hdfs dfs -ls / 
 
-To see report of hdfs
+//To see report of hdfs
 hdfs dfsadmin -report
 
-To turn off safe mode 
+//To turn off safe mode 
 hdfs dfsadmin -safemode leave
 
+//To put a file into hdfs
+hdfs dfs -put <filename> <hdfs path>
 
+//To check and stat for a replication factor of a file in hdfs
+hdfs dfs -ls <path to hdfs file>
+Second file represent the replication factor
