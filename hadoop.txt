@@ -4,3 +4,10 @@ hdfs dfs -rm -r hdfs://path/to/file
 To list files in hdfs from root (can also specify the path to file or dir)
 hdfs dfs -ls / 
 
+To see report of hdfs
+hdfs dfsadmin -report
+
+To turn off safe mode 
+hdfs dfsadmin -safemode leave
+
+
