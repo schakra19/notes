@@ -1,0 +1,5 @@
+To find a file
+$ find -iname <filename>
+
+To change a directory permission so as to create files withou sudo access
+$ sudo chown -R <username> <dirname>
